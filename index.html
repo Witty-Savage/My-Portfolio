@@ -1,91 +1,85 @@
-<body {
-  background-color: #c8ddb8;
-  color: #e15a06;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-}
-nav {
-  background-color: #4c86af;
-  padding: 0em;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  justify-content: space-around;
-  gap: 0em;
-}
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: "Bangers", Georgia, sans-serif;
-  padding: 40px 40px;
-  font-size: larger;
-}
-nav a:hover {
-  color: #a77dd3;
-}
-h1 {
-  margin: 0.5em 0 0.2em 0;
-  text-align: center;
-  color: #4c86af;
-  font-family: "Bangers", Georgia, sans-serif;
-  font-size: 3em;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-h2 {
-  margin: 0.5em 0 0.2em 0;
-  text-align: center;
-  color: #4c86af;
-  font-family: "Bangers", Georgia, sans-serif;
-  font-size: 2em;
-}
-img {
-  max-width: 300px;
-  border-radius: 12px;
-  float: left;
-  margin: 20px 20px 20px 0;
-}
+    <h1 id="home">Nafisa's Portfolio</h1>
+    <p>
+      Welcome to my Portfolio! Here, we learn about what it means to navigate
+      graduate school as an international student from Ghana.
+    </p>
 
-p {
-  margin: 0 0 1em 0;
-  max-width: 800px;
-  padding: 0 1em;
-  text-align: left;
-}
+    <main class="grid">
+      <article>
+        <h1 id="about">About Me</h1>
+        <img
+          src="profile.jpg"
+          alt="this is an image of me in a cream-colored turtle neck top and black blazer and black scarf on my head in a turban-like manner. I am seated behind a black board in a classroom setting posed with my right index finger on my chin"
+          width="300"
+          height="450"
+        />
+        <p>
+          My name is Nafisa Mohammed. I am originally from Ghana and currently
+          in my second year in the Ph.D. Rhetoric & Professional program at the
+          English department. I am also employed part-time as a graduate
+          assistant instructor at the department where I teach first-year college
+          composition classes and courses in Technical Professional Communication
+          (TPC). The best part about my teaching job is interacting with my
+          students and learning new stuff from them.
+        </p>
+      </article>
 
-#about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin: 50px auto;
-  max-width: 800px;
-  padding: 1em;
-}
-
-#projects {
-  text-align: center;
-  margin: 50px auto;
-  max-width: 800px;
-}
-
-.project-list {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-}
-
-.project-list a {
-  text-decoration: none;
-  color: #4c86af;
-  font-weight: bold;
-}
-
-#contact {
-  margin-top: 2em;
-  padding: 1.5em;
-  text-align: center;
-  background: #fff;
-}
+      <section id="projects">
+        <h2>My Projects</h2>
+        <ul class="project-list">
+          <li>
+            <a href="https://github.com/vbanuelo/moestavern.git" target="_blank"
+              >Project 1: Fictional Business Website</a
+            >
+          </li>
+          <li>
+            <a href="Project 2" target="_blank">Project 2: Technical Writing Portfolio</a>
+          </li>
+          <li>
+            <a href="Project 3" target="_blank">Project 3: Interactive Data Visualization</a>
+          </li>
+        </ul>
+      </section>
+<!-- Fictional Business Website Project -->
+<section id="fictional-business" class="project-block">
+<h2>Fictional Business Website Project</h2>
+<div class="project-description">
+<p>
+This is a collaborative project from my Web Developmemnt class. We created a fully functional fictional business website for Moe's Tavern from the Simpson's show.
+We focused on building a cohesive brand identity, applying consistent design principles, and developing
+clear documentation to guide potential collaborators.
+</p>
+<p>
+<strong>My Role:</strong> I served as the content writer for all the pages. I was responsible for documenting some markdown files and my work was focused on creativity, making the language accessible, professional, and aligned with our
+business website branding identity.
+</p>
+</div>
+</section>
+<div class="project-links">
+  <h3>Project Links</h3>
+  <ul>
+    <li><a href="https://github.com/vbanuelo/moestavern" target="_blank">Repository on GitHub</a></li>
+    <li><a href="https://vbanuelo.github.io/moestavern/" target="_blank">Live Website</a></li>
+  </ul>
+</div>
+      <h2 id="contact">Contact</h2>
+      <p>Email: nafmoham@nmsu.edu</p>
+    </main>
+  </body>
+</html>

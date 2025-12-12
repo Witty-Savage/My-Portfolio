@@ -1,6 +1,6 @@
 body {
   background-color: #c8ddb8;
-  color: #37a5c3;
+  color: hsl(193, 56%, 49%);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   margin: 0;
@@ -69,7 +69,7 @@ h1 {
 .about-container p {
   flex: 1;
   margin: 0;
-  text-align: left;
+  text-align: center;
   font-size: 1.05em;
   line-height: 1.5em;
 }

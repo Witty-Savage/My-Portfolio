@@ -26,19 +26,16 @@ nav a {
 nav a:hover {
   color: #a77dd3;
 }
-h1 {
+h1, #about h2 {
   margin: 0.5em 0 0.2em 0;
   text-align: center;
   color: #4c86af;
   font-family: "Bangers", Georgia, sans-serif;
+}
+h1 {
   font-size: 3em;
 }
-
-h2 {
-  margin: 0.5em 0 0.2em 0;
-  text-align: center;
-  color: #4c86af;
-  font-family: "Bangers", Georgia, sans-serif;
+#about h2 {
   font-size: 2em;
 }
 
@@ -47,19 +44,16 @@ h2 {
   margin: 50px auto;
   max-width: 800px;
 }
-
 .project-list {
   list-style-type: none;
   padding: 0;
   text-align: center;
 }
-
 .project-list a {
   text-decoration: none;
   color: #4c86af;
   font-weight: bold;
 }
-
 #contact {
   margin-top: 2em;
   padding: 1.5em;
@@ -72,21 +66,20 @@ h2 {
   align-items: flex-start;
   gap: 20px;
   max-width: 900px;
-  margin: 50px auto;
+  margin: 30px auto 50px auto; /* adjusted top margin */
   padding: 1em;
 }
-
 #about img {
   max-width: 280px;
   height: auto;
   border-radius: 12px;
   flex-shrink: 0; 
 }
-
 #about p {
   flex: 1;
   margin: 0;
   text-align: left;
   padding: 0;
   max-width: none; 
+  align-self: center; /* vertically center text with image */
 }

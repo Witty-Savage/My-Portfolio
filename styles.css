@@ -1,6 +1,6 @@
 body {
   background-color: #c8ddb8;
-  color: hsl(193, 56%, 49%);
+  color: oklab(60.126999999999995% 0.19254 -0.22117);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   margin: 0;

@@ -5,6 +5,7 @@ body {
   line-height: 1.6;
   margin: 0;
 }
+
 nav {
   background-color: #4c86af;
   padding: 0em;
@@ -15,6 +16,7 @@ nav {
   justify-content: space-around;
   gap: 0em;
 }
+
 nav a {
   color: #fff;
   text-decoration: none;
@@ -23,80 +25,92 @@ nav a {
   padding: 40px 40px;
   font-size: larger;
 }
+
 nav a:hover {
   color: #a77dd3;
 }
+
 h1, #about h2 {
   margin: 0.5em 0 0.2em 0;
   text-align: center;
   color: #4c86af;
   font-family: "Bangers", Georgia, sans-serif;
 }
+
 h1 {
   font-size: 3em;
 }
+
 #about h2 {
   font-size: 2em;
+  margin-bottom: 1em;
 }
 
-#projects {
-  text-align: center;
-  margin: 50px auto;
-  max-width: 800px;
-}
-.project-list {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-}
-.project-list a {
-  text-decoration: none;
-  color: #4c86af;
-  font-weight: bold;
-}
-#contact {
-  margin-top: 2em;
-  padding: 1.5em;
-  text-align: center;
-  background: #fff;
-}
-#about {
-  gap: 20px;
-  max-width: 900px;
-  margin: 30px auto 50px auto; /* adjusted top margin */
-  padding: 1em;
-}
-#about img {
-  max-width: 280px;
-  height: auto;
-  border-radius: 12px;
-}
-#about p {
-  flex: 1;
-  margin: 0;
-  text-align: left;
-  padding: 0;
-  max-width: none; 
-  align-self: center; /* vertically center text with image */
-}
+/* About Me Section Flex Layout */
 .about-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-start; /* aligns text at top of image */
-  gap: 20px; /* space between image and text */
+  align-items: flex-start;
+  gap: 30px; /* increased spacing for better visual separation */
   max-width: 900px;
-  margin: 20px auto; /* centers the container */
+  margin: 20px auto 50px auto;
+  padding: 1em;
+  background-color: #e3f2d3; /* subtle highlight so About section stands out */
+  border-radius: 12px;
 }
 
 .about-container img {
   max-width: 280px;
   height: auto;
   border-radius: 12px;
-  flex-shrink: 0; /* prevent image from shrinking */
+  flex-shrink: 0;
 }
 
 .about-container p {
-  flex: 1; /* take remaining space next to image */
+  flex: 1;
   margin: 0;
   text-align: left;
+  font-size: 1.05em;
+  line-height: 1.5em;
 }
+
+/* Projects Section */
+#projects {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.project-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.project-list a {
+  text-decoration: none;
+  color: #4c86af;
+  font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+  margin-top: 2em;
+  padding: 1.5em;
+  text-align: center;
+  background: #fff;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 700px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-container p {
+    text-align: center;
+  }
+}
+

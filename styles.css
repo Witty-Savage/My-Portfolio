@@ -52,15 +52,6 @@ img {
   display: block;
 }
 
-#about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin: 50px auto;
-  max-width: 800px;
-  padding: 1em;
-}
 
 #projects {
   text-align: center;
@@ -85,4 +76,28 @@ img {
   padding: 1.5em;
   text-align: center;
   background: #fff;
+}
+#about {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 1em;
+}
+
+#about img {
+  max-width: 280px;
+  height: auto;
+  border-radius: 12px;
+  flex-shrink: 0; /* prevents image from shrinking */
+}
+
+#about p {
+  flex: 1;
+  margin: 0;
+  text-align: left;
+  padding: 0;
+  max-width: none; /* remove the old 800px constraint */
 }

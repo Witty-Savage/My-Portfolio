@@ -90,21 +90,3 @@ h2 {
   padding: 0;
   max-width: none; 
 }
-.about-container {
-  display: flex;
-  align-items: flex-start; /* Align text with top of image */
-  gap: 20px; /* Space between image and text */
-  max-width: 900px;
-  margin: 0 auto; /* Center the container */
-}
-
-.about-container img {
-  max-width: 300px;
-  border-radius: 12px;
-  margin: 0; /* remove previous float/margin */
-}
-
-.about-container p {
-  text-align: left; /* Align text beside image */
-  margin: 0;
-}
